@@ -1663,7 +1663,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse  </span>
-<span class="n">read</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../us.csv'</span><span class="p">)</span>
+<span class="n">read</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../us_m.csv'</span><span class="p">)</span>
 <span class="n">read</span><span class="o">=</span><span class="n">read</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'State'</span><span class="p">:</span><span class="s1">'state'</span><span class="p">})</span>
 <span class="n">filler</span><span class="o">=</span><span class="p">[</span><span class="s1">'state'</span><span class="p">,</span><span class="s1">'Social Index Current'</span><span class="p">,</span> <span class="s1">'Change in SD index'</span><span class="p">,</span> <span class="s1">'SD Past'</span><span class="p">,</span> <span class="s1">'Rt Current'</span><span class="p">,</span>
        <span class="s1">'Rt Past'</span><span class="p">,</span> <span class="s1">'Change in Rt'</span><span class="p">,</span> <span class="s1">'Stratified Rt'</span><span class="p">,</span> <span class="s1">'tests per case'</span><span class="p">,</span>
@@ -1742,18 +1742,18 @@ window.onload = wrap_img;
     <tr>
       <th>0</th>
       <td>AL</td>
-      <td>NaN</td>
-      <td>-29.0</td>
-      <td>29.0</td>
+      <td>22</td>
+      <td>-7</td>
+      <td>29</td>
       <td>1.111944</td>
       <td>1.111944</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>14.88930282</td>
-      <td>11546.0</td>
+      <td>14.889303</td>
+      <td>11546</td>
       <td>...</td>
-      <td>56092.0</td>
-      <td>1144.0</td>
+      <td>56092</td>
+      <td>1144</td>
       <td>4903185</td>
       <td>2020-08-02</td>
       <td>1.038194</td>
@@ -1766,18 +1766,18 @@ window.onload = wrap_img;
     <tr>
       <th>1</th>
       <td>AR</td>
-      <td>NaN</td>
-      <td>-26.0</td>
-      <td>26.0</td>
+      <td>76</td>
+      <td>50</td>
+      <td>26</td>
       <td>1.037065</td>
       <td>1.037065</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>32.62921348</td>
-      <td>5150.0</td>
+      <td>32.629213</td>
+      <td>5150</td>
       <td>...</td>
-      <td>42509.0</td>
-      <td>1409.0</td>
+      <td>42509</td>
+      <td>1409</td>
       <td>3017804</td>
       <td>2020-08-02</td>
       <td>1.032027</td>
@@ -1790,18 +1790,18 @@ window.onload = wrap_img;
     <tr>
       <th>2</th>
       <td>CA</td>
-      <td>NaN</td>
-      <td>-37.0</td>
-      <td>37.0</td>
+      <td>22</td>
+      <td>-15</td>
+      <td>37</td>
       <td>0.970088</td>
       <td>0.970088</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>18.59767462</td>
-      <td>54351.0</td>
+      <td>18.597675</td>
+      <td>54351</td>
       <td>...</td>
-      <td>888118.0</td>
-      <td>2248.0</td>
+      <td>888118</td>
+      <td>2248</td>
       <td>39512223</td>
       <td>2020-08-02</td>
       <td>0.887025</td>
@@ -1814,18 +1814,18 @@ window.onload = wrap_img;
     <tr>
       <th>3</th>
       <td>FL</td>
-      <td>NaN</td>
-      <td>-34.0</td>
-      <td>34.0</td>
+      <td>85</td>
+      <td>51</td>
+      <td>34</td>
       <td>0.986019</td>
       <td>0.986019</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
       <td>21.515181</td>
-      <td>59137.0</td>
+      <td>59137</td>
       <td>...</td>
-      <td>321301.0</td>
-      <td>1496.0</td>
+      <td>321301</td>
+      <td>1496</td>
       <td>21477737</td>
       <td>2020-08-02</td>
       <td>0.963125</td>
@@ -1838,18 +1838,18 @@ window.onload = wrap_img;
     <tr>
       <th>4</th>
       <td>GA</td>
-      <td>NaN</td>
-      <td>-30.0</td>
-      <td>30.0</td>
+      <td>22</td>
+      <td>-8</td>
+      <td>30</td>
       <td>0.953783</td>
       <td>0.953783</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>12.9180545</td>
-      <td>24592.0</td>
+      <td>12.918055</td>
+      <td>24592</td>
       <td>...</td>
-      <td>193438.0</td>
-      <td>1822.0</td>
+      <td>193438</td>
+      <td>1822</td>
       <td>10617423</td>
       <td>2020-08-02</td>
       <td>0.951249</td>
@@ -1862,18 +1862,18 @@ window.onload = wrap_img;
     <tr>
       <th>5</th>
       <td>IA</td>
-      <td>NaN</td>
-      <td>-25.0</td>
-      <td>25.0</td>
+      <td>16</td>
+      <td>-9</td>
+      <td>25</td>
       <td>1.010162</td>
       <td>1.010162</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>6.070516096</td>
-      <td>3287.0</td>
+      <td>6.070516</td>
+      <td>3287</td>
       <td>...</td>
-      <td>31630.0</td>
-      <td>1003.0</td>
+      <td>31630</td>
+      <td>1003</td>
       <td>3155070</td>
       <td>2020-08-02</td>
       <td>0.987130</td>
@@ -1886,18 +1886,18 @@ window.onload = wrap_img;
     <tr>
       <th>6</th>
       <td>IL</td>
-      <td>NaN</td>
-      <td>-27.0</td>
-      <td>27.0</td>
+      <td>44</td>
+      <td>17</td>
+      <td>27</td>
       <td>1.092876</td>
       <td>1.092876</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>6.08053467</td>
-      <td>10625.0</td>
+      <td>6.080535</td>
+      <td>10625</td>
       <td>...</td>
-      <td>264702.0</td>
-      <td>2089.0</td>
+      <td>264702</td>
+      <td>2089</td>
       <td>12671821</td>
       <td>2020-08-02</td>
       <td>1.079792</td>
@@ -1910,18 +1910,18 @@ window.onload = wrap_img;
     <tr>
       <th>7</th>
       <td>IN</td>
-      <td>NaN</td>
-      <td>-25.0</td>
-      <td>25.0</td>
+      <td>54</td>
+      <td>29</td>
+      <td>25</td>
       <td>1.001587</td>
       <td>1.001587</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>6.380462725</td>
-      <td>5526.0</td>
+      <td>6.380463</td>
+      <td>5526</td>
       <td>...</td>
-      <td>67691.0</td>
-      <td>1005.0</td>
+      <td>67691</td>
+      <td>1005</td>
       <td>6732219</td>
       <td>2020-08-02</td>
       <td>1.003324</td>
@@ -1934,18 +1934,18 @@ window.onload = wrap_img;
     <tr>
       <th>8</th>
       <td>KS</td>
-      <td>NaN</td>
-      <td>-27.0</td>
-      <td>27.0</td>
+      <td>46</td>
+      <td>19</td>
+      <td>27</td>
       <td>1.071201</td>
       <td>1.071201</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>6.92339979</td>
-      <td>2704.0</td>
+      <td>6.923400</td>
+      <td>2704</td>
       <td>...</td>
-      <td>22903.0</td>
-      <td>786.0</td>
+      <td>22903</td>
+      <td>786</td>
       <td>2913314</td>
       <td>2020-08-02</td>
       <td>1.064063</td>
@@ -1958,18 +1958,18 @@ window.onload = wrap_img;
     <tr>
       <th>9</th>
       <td>MD</td>
-      <td>NaN</td>
-      <td>-33.0</td>
-      <td>33.0</td>
+      <td>45</td>
+      <td>12</td>
+      <td>33</td>
       <td>1.047616</td>
       <td>1.047616</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>4.486504193</td>
-      <td>6268.0</td>
+      <td>4.486504</td>
+      <td>6268</td>
       <td>...</td>
-      <td>105119.0</td>
-      <td>1739.0</td>
+      <td>105119</td>
+      <td>1739</td>
       <td>6045680</td>
       <td>2020-08-02</td>
       <td>1.031470</td>
@@ -1982,18 +1982,18 @@ window.onload = wrap_img;
     <tr>
       <th>10</th>
       <td>ME</td>
-      <td>NaN</td>
-      <td>-24.0</td>
-      <td>24.0</td>
+      <td>45</td>
+      <td>21</td>
+      <td>24</td>
       <td>0.975832</td>
       <td>0.975832</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>11.83404255</td>
-      <td>138.0</td>
+      <td>11.834043</td>
+      <td>138</td>
       <td>...</td>
-      <td>16704.0</td>
-      <td>1243.0</td>
+      <td>16704</td>
+      <td>1243</td>
       <td>1344212</td>
       <td>2020-08-02</td>
       <td>0.935425</td>
@@ -2005,19 +2005,43 @@ window.onload = wrap_img;
     </tr>
     <tr>
       <th>11</th>
-      <td>MO</td>
-      <td>NaN</td>
-      <td>-26.0</td>
-      <td>26.0</td>
-      <td>1.220294</td>
-      <td>1.220294</td>
-      <td>0.0</td>
+      <td>MN</td>
+      <td>45</td>
+      <td>16</td>
+      <td>29</td>
+      <td>1.074376</td>
+      <td>1.074376</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>12.8920742</td>
-      <td>9837.0</td>
+      <td>6.418775</td>
+      <td>4757</td>
       <td>...</td>
-      <td>71044.0</td>
-      <td>1158.0</td>
+      <td>-98722</td>
+      <td>-1751</td>
+      <td>5639632</td>
+      <td>2020-08-02</td>
+      <td>1.104105</td>
+      <td>20200802</td>
+      <td>1654.0</td>
+      <td>759</td>
+      <td>12073</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>MO</td>
+      <td>1</td>
+      <td>-25</td>
+      <td>26</td>
+      <td>1.220294</td>
+      <td>1.220294</td>
+      <td>0</td>
+      <td>#REF!</td>
+      <td>12.892074</td>
+      <td>9837</td>
+      <td>...</td>
+      <td>71044</td>
+      <td>1158</td>
       <td>6137428</td>
       <td>2020-08-02</td>
       <td>1.162356</td>
@@ -2028,20 +2052,20 @@ window.onload = wrap_img;
       <td>0</td>
     </tr>
     <tr>
-      <th>12</th>
+      <th>13</th>
       <td>MS</td>
-      <td>NaN</td>
-      <td>-30.0</td>
-      <td>30.0</td>
+      <td>13</td>
+      <td>-17</td>
+      <td>30</td>
       <td>1.061724</td>
       <td>1.061724</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>7.721539284</td>
-      <td>8168.0</td>
+      <td>7.721539</td>
+      <td>8168</td>
       <td>...</td>
-      <td>35120.0</td>
-      <td>1180.0</td>
+      <td>35120</td>
+      <td>1180</td>
       <td>2976149</td>
       <td>2020-08-02</td>
       <td>1.070742</td>
@@ -2052,20 +2076,20 @@ window.onload = wrap_img;
       <td>10</td>
     </tr>
     <tr>
-      <th>13</th>
+      <th>14</th>
       <td>NJ</td>
-      <td>NaN</td>
-      <td>-32.0</td>
-      <td>32.0</td>
+      <td>15</td>
+      <td>-17</td>
+      <td>32</td>
       <td>0.965851</td>
       <td>0.965851</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>2.986050858</td>
-      <td>2802.0</td>
+      <td>2.986051</td>
+      <td>2802</td>
       <td>...</td>
-      <td>180739.0</td>
-      <td>2035.0</td>
+      <td>180739</td>
+      <td>2035</td>
       <td>8882190</td>
       <td>2020-08-02</td>
       <td>0.973840</td>
@@ -2076,20 +2100,20 @@ window.onload = wrap_img;
       <td>6</td>
     </tr>
     <tr>
-      <th>14</th>
+      <th>15</th>
       <td>NY</td>
-      <td>NaN</td>
-      <td>-39.0</td>
-      <td>39.0</td>
+      <td>52</td>
+      <td>13</td>
+      <td>39</td>
       <td>0.941746</td>
       <td>0.941746</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>8.131632083</td>
-      <td>4499.0</td>
+      <td>8.131632</td>
+      <td>4499</td>
       <td>...</td>
-      <td>455625.0</td>
-      <td>2342.0</td>
+      <td>455625</td>
+      <td>2342</td>
       <td>19453561</td>
       <td>2020-08-02</td>
       <td>0.962816</td>
@@ -2100,20 +2124,20 @@ window.onload = wrap_img;
       <td>6</td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>16</th>
       <td>OH</td>
-      <td>NaN</td>
-      <td>-26.0</td>
-      <td>26.0</td>
+      <td>64</td>
+      <td>38</td>
+      <td>26</td>
       <td>0.918456</td>
       <td>0.918456</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>10.27509747</td>
-      <td>8786.0</td>
+      <td>10.275097</td>
+      <td>8786</td>
       <td>...</td>
-      <td>191445.0</td>
-      <td>1638.0</td>
+      <td>191445</td>
+      <td>1638</td>
       <td>11689100</td>
       <td>2020-08-02</td>
       <td>0.941024</td>
@@ -2124,20 +2148,20 @@ window.onload = wrap_img;
       <td>14</td>
     </tr>
     <tr>
-      <th>16</th>
+      <th>17</th>
       <td>TN</td>
-      <td>NaN</td>
-      <td>-26.0</td>
-      <td>26.0</td>
+      <td>15</td>
+      <td>-11</td>
+      <td>26</td>
       <td>0.980140</td>
       <td>0.980140</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>17.46563523</td>
-      <td>14147.0</td>
+      <td>17.465635</td>
+      <td>14147</td>
       <td>...</td>
-      <td>163081.0</td>
-      <td>2388.0</td>
+      <td>163081</td>
+      <td>2388</td>
       <td>6829174</td>
       <td>2020-08-02</td>
       <td>0.984245</td>
@@ -2148,20 +2172,20 @@ window.onload = wrap_img;
       <td>6</td>
     </tr>
     <tr>
-      <th>17</th>
+      <th>18</th>
       <td>TX</td>
-      <td>NaN</td>
-      <td>-36.0</td>
-      <td>36.0</td>
+      <td>35</td>
+      <td>-1</td>
+      <td>36</td>
       <td>0.933380</td>
       <td>0.933380</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>17.09735725</td>
-      <td>56091.0</td>
+      <td>17.097357</td>
+      <td>56091</td>
       <td>...</td>
-      <td>405704.0</td>
-      <td>1399.0</td>
+      <td>405704</td>
+      <td>1399</td>
       <td>28995881</td>
       <td>2020-08-02</td>
       <td>0.956087</td>
@@ -2172,20 +2196,20 @@ window.onload = wrap_img;
       <td>0</td>
     </tr>
     <tr>
-      <th>18</th>
+      <th>19</th>
       <td>VA</td>
-      <td>NaN</td>
-      <td>-30.0</td>
-      <td>30.0</td>
+      <td>85</td>
+      <td>55</td>
+      <td>30</td>
       <td>1.023291</td>
       <td>1.023291</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>5.528127184</td>
-      <td>7034.0</td>
+      <td>5.528127</td>
+      <td>7034</td>
       <td>...</td>
-      <td>115897.0</td>
-      <td>1358.0</td>
+      <td>115897</td>
+      <td>1358</td>
       <td>8535519</td>
       <td>2020-08-02</td>
       <td>1.095967</td>
@@ -2196,20 +2220,20 @@ window.onload = wrap_img;
       <td>3</td>
     </tr>
     <tr>
-      <th>19</th>
+      <th>20</th>
       <td>WA</td>
-      <td>NaN</td>
-      <td>-30.0</td>
-      <td>30.0</td>
+      <td>25</td>
+      <td>-5</td>
+      <td>30</td>
       <td>1.012360</td>
       <td>1.012360</td>
-      <td>0.0</td>
+      <td>0</td>
       <td>#REF!</td>
-      <td>20.17057221</td>
-      <td>5538.0</td>
+      <td>20.170572</td>
+      <td>5538</td>
       <td>...</td>
-      <td>88933.0</td>
-      <td>1168.0</td>
+      <td>88933</td>
+      <td>1168</td>
       <td>7614893</td>
       <td>2020-08-02</td>
       <td>1.089897</td>
@@ -2219,9 +2243,33 @@ window.onload = wrap_img;
       <td>27874</td>
       <td>28</td>
     </tr>
+    <tr>
+      <th>21</th>
+      <td>WI</td>
+      <td>26</td>
+      <td>0</td>
+      <td>26</td>
+      <td>0.985503</td>
+      <td>0.985503</td>
+      <td>0</td>
+      <td>#REF!</td>
+      <td>11.013130</td>
+      <td>6120</td>
+      <td>...</td>
+      <td>93650</td>
+      <td>1608</td>
+      <td>5822434</td>
+      <td>2020-08-02</td>
+      <td>0.917461</td>
+      <td>20200802</td>
+      <td>955.0</td>
+      <td>932</td>
+      <td>9653</td>
+      <td>1</td>
+    </tr>
   </tbody>
 </table>
-<p>20 rows × 38 columns</p>
+<p>22 rows × 38 columns</p>
 </div>
 </div>
 
