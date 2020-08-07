@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -184,6 +184,70 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">CPLE_OpenFailedError</span>                      Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">fiona/_shim.pyx</span> in <span class="ansi-cyan-fg">fiona._shim.gdal_open_vector</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+
+<span class="ansi-green-intense-fg ansi-bold">fiona/_err.pyx</span> in <span class="ansi-cyan-fg">fiona._err.exc_wrap_pointer</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+
+<span class="ansi-red-intense-fg ansi-bold">CPLE_OpenFailedError</span>: ./shapes/cb_2019_us_state_20m: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-intense-fg ansi-bold">DriverError</span>                               Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-2-174081889491&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      7</span> state_shpfile <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;./shapes/cb_2019_us_state_20m&#39;</span>
+<span class="ansi-green-fg">      8</span> county_shpfile <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;./shapes/cb_2019_us_county_20m&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 9</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>states <span class="ansi-yellow-intense-fg ansi-bold">=</span> gpd<span class="ansi-yellow-intense-fg ansi-bold">.</span>read_file<span class="ansi-yellow-intense-fg ansi-bold">(</span>state_shpfile<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     10</span> county <span class="ansi-yellow-intense-fg ansi-bold">=</span> gpd<span class="ansi-yellow-intense-fg ansi-bold">.</span>read_file<span class="ansi-yellow-intense-fg ansi-bold">(</span>county_shpfile<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     11</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">C:\Users\anaconda3\envs\USAcovidMAP\lib\site-packages\geopandas\io\file.py</span> in <span class="ansi-cyan-fg">_read_file</span><span class="ansi-blue-intense-fg ansi-bold">(filename, bbox, mask, rows, **kwargs)</span>
+<span class="ansi-green-fg">     94</span> 
+<span class="ansi-green-fg">     95</span>     <span class="ansi-green-intense-fg ansi-bold">with</span> fiona_env<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 96</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">with</span> reader<span class="ansi-yellow-intense-fg ansi-bold">(</span>path_or_bytes<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">as</span> features<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">     97</span> 
+<span class="ansi-green-fg">     98</span>             <span class="ansi-red-intense-fg ansi-bold"># In a future Fiona release the crs attribute of features will</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\Users\anaconda3\envs\USAcovidMAP\lib\site-packages\fiona\env.py</span> in <span class="ansi-cyan-fg">wrapper</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
+<span class="ansi-green-fg">    396</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> wrapper<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    397</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> local<span class="ansi-yellow-intense-fg ansi-bold">.</span>_env<span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 398</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">return</span> f<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    399</span>         <span class="ansi-green-intense-fg ansi-bold">else</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    400</span>             <span class="ansi-green-intense-fg ansi-bold">if</span> isinstance<span class="ansi-yellow-intense-fg ansi-bold">(</span>args<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> str<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\Users\anaconda3\envs\USAcovidMAP\lib\site-packages\fiona\__init__.py</span> in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-intense-fg ansi-bold">(fp, mode, driver, schema, crs, encoding, layer, vfs, enabled_drivers, crs_wkt, **kwargs)</span>
+<span class="ansi-green-fg">    251</span> 
+<span class="ansi-green-fg">    252</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> mode <span class="ansi-green-intense-fg ansi-bold">in</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;a&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;r&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 253</span><span class="ansi-yellow-intense-fg ansi-bold">             c = Collection(path, mode, driver=driver, encoding=encoding,
+</span><span class="ansi-green-fg">    254</span>                            layer=layer, enabled_drivers=enabled_drivers, **kwargs)
+<span class="ansi-green-fg">    255</span>         <span class="ansi-green-intense-fg ansi-bold">elif</span> mode <span class="ansi-yellow-intense-fg ansi-bold">==</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;w&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\Users\anaconda3\envs\USAcovidMAP\lib\site-packages\fiona\collection.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, path, mode, driver, schema, crs, encoding, layer, vsi, archive, enabled_drivers, crs_wkt, ignore_fields, ignore_geometry, **kwargs)</span>
+<span class="ansi-green-fg">    152</span>             <span class="ansi-green-intense-fg ansi-bold">if</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>mode <span class="ansi-yellow-intense-fg ansi-bold">==</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;r&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    153</span>                 self<span class="ansi-yellow-intense-fg ansi-bold">.</span>session <span class="ansi-yellow-intense-fg ansi-bold">=</span> Session<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 154</span><span class="ansi-yellow-intense-fg ansi-bold">                 </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>session<span class="ansi-yellow-intense-fg ansi-bold">.</span>start<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    155</span>             <span class="ansi-green-intense-fg ansi-bold">elif</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>mode <span class="ansi-green-intense-fg ansi-bold">in</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;a&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;w&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    156</span>                 self<span class="ansi-yellow-intense-fg ansi-bold">.</span>session <span class="ansi-yellow-intense-fg ansi-bold">=</span> WritingSession<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">fiona/ogrext.pyx</span> in <span class="ansi-cyan-fg">fiona.ogrext.Session.start</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+
+<span class="ansi-green-intense-fg ansi-bold">fiona/_shim.pyx</span> in <span class="ansi-cyan-fg">fiona._shim.gdal_open_vector</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+
+<span class="ansi-red-intense-fg ansi-bold">DriverError</span>: ./shapes/cb_2019_us_state_20m: No such file or directory</pre>
+</div>
+</div>
+
 </div>
 </div>
 
