@@ -183,14 +183,14 @@ window.onload = wrap_img;
 
 <span class="c1">#IMPORT DATA SETS FROM TRUSTED SOURCES</span>
 <span class="c1">#US CENSUS DATA FROM -</span>
-<span class="n">censusData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;cen.csv&#39;</span><span class="p">)</span>
+<span class="n">censusData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/cen.csv&#39;</span><span class="p">)</span>
 
 <span class="c1">#COUNTY MASK USAGE FROM -</span>
-<span class="n">maskData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;maskbycounty.csv&#39;</span><span class="p">)</span>
+<span class="n">maskData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/maskbycounty.csv&#39;</span><span class="p">)</span>
 
 <span class="c1">#RT DATA FROM -</span>
-<span class="n">D</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;rttestcounty.csv&#39;</span><span class="p">)</span>
-<span class="n">countyData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;isee.csv&#39;</span><span class="p">)</span>
+<span class="n">D</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/rttestcounty.csv&#39;</span><span class="p">)</span>
+<span class="n">countyData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/isee.csv&#39;</span><span class="p">)</span>
 <span class="n">rtData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://d14wlfuexuxgcm.cloudfront.net/covid/rt.csv&#39;</span><span class="p">)</span>
 
 <span class="c1">#CLEAN UP DATA AND STANDARDIZE THE COLUMNS</span>
@@ -261,7 +261,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#KELLOGGS LOCATIONS</span>
-<span class="n">clientLocations</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;kellData3.csv&#39;</span><span class="p">)</span>
+<span class="n">clientLocations</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/kellData3.csv&#39;</span><span class="p">)</span>
 <span class="n">fCol</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;uid&#39;</span><span class="p">,</span> <span class="s1">&#39;fips&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;county&#39;</span><span class="p">]</span>
 <span class="n">clientDataCleaned</span><span class="o">=</span><span class="n">clientLocations</span><span class="p">[</span><span class="n">fCol</span><span class="p">]</span>
 </pre></div>
